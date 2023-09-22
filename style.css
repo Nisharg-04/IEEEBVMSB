@@ -1,0 +1,263 @@
+/* ----------------------------------
+
+Template Name: Crysa - It Solution Template
+Author: validtheme
+Description:
+Version: 1.0.2
+
+Main Font    : Yantramanav
+Main Color   : #8A6552
+
+-------------------------------------
+
+[Typography]
+
+Body copy:    15px 'Yantramanav', sans-serif
+Header:     36px 'Yantramanav', sans-serif
+Input, textarea:  15px 'Yantramanav', sans-serif
+Sidebar heading:  20px 'Yantramanav', sans-serif
+
+>>> TABLE OF CONTENTS:
+=======================
+        
+    01. Template default css
+        - Animations
+        - General
+        - Section Title
+        - Video Button
+        - Typography
+        - Tables
+        - Forms
+        - Buttons
+        - Pagination
+        - Colors
+        - Accordion
+        - Tabs
+    02. Preloader
+    03. Topbar
+    04 Navbar
+        - Navbar Default
+        - Navbar Transparent
+        - Navbar Sticky
+        - Navbar Box
+    05. Banner
+        - Slide Effect
+        - Fade Effect
+    06. Features
+    07. About Us
+        - Full Width Version
+        - Default Version
+    08. Services
+        - Version One
+        - Version Two
+        - Services Single
+    09. Why Choose Us
+    10. Company Analysis/Graph
+    11. Companies/Clients/Partner
+    12. Team
+    13. Testimonials
+    14. Projects
+    15. Gallery
+    16. Our Expertise
+    17. Work Process
+    18. FAQ
+    19. Blog
+        - Standard
+        - Left Sidebar
+        - Right Sidebar
+        - Single
+    20. Error 404
+    21. Footer
+    22. PHP Contact Form
+    23. Others
+
+*/
+
+/*
+** General Styles for HTML tags
+*/
+
+
+section.contact-us {
+    /* background-image: url(../images/footer-bg.png); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    position: relative;
+  }
+  
+  section.contact-us:after {
+    position: absolute;
+    content: "";
+    /* background-image: url(../images/footer-left-dec.png); */
+    left: 0px;
+    top: 60px;
+    width: 267px;
+    height: 396px;
+    z-index: 1;
+  }
+  
+  section.contact-us .contact-info {
+    background-color: #fff;
+    margin-top: -30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    z-index: 5;
+    position: relative;
+    padding: 20px;
+  }
+
+  
+  section.contact-us .contact-info .icon i {
+    float: left;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #091D3E;
+    /* background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%); */
+    color: #fff;
+  }
+  
+  section.contact-us .contact-info h4 {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  section.contact-us .contact-info span {
+    font-size: 15px;
+    color: #091D3E;
+    font-weight: 700;
+  }
+  
+  section.contact-us .section-heading {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  section.contact-us #contact {
+    margin-left: -100px;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 40px;
+  }
+  .sub-title{
+    font-size: 40px !important;
+  }
+  .items{
+    max-width: 400px;
+    max-height: fit-content;
+  }
+  .Socities{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    flex-direction: row !important;
+  }
+  section.contact-us #contact input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f4f7fb;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a7a7a;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+  }
+  
+  section.contact-us #contact textarea {
+    width: 100%;
+    min-height: 140px;
+    max-height: 180px;
+    border-radius: 5px;
+    background-color: #f4f7fb;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a7a7a;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  
+  section.contact-us #contact button {
+    float: right;
+    font-size: 13px;
+    color: #fff;
+    background: #091D3E;
+    /* background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%); */
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+  }
+  
+  section.contact-us #contact button:hover {
+    opacity: 0.9;
+  }
+  
+  section.contact-us ul.social-icons li {
+    display: inline-block;
+    margin: 0px 5px;
+  }
+  
+  section.contact-us ul.social-icons {
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  section.contact-us ul.social-icons li a {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    background-color: #fff;
+    color: #091D3E;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+  
+  section.contact-us ul.social-icons li a:hover {
+    background-color: #091D3E;
+    color: #fff;
+  }
+  
+
+#CM_heading{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-evenly !important;
+
+}
+#FM_heading{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-evenly !important;
+
+}
+
+.NPSS_COMITTEE{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-evenly !important;
+}
